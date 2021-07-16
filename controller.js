@@ -1,9 +1,9 @@
-Sensor = require('./sensorModel')
+const Sensor = require('./sensorModel')
 exports.get_sensores = (req,res)=>{
     Sensor.get((err,sensors)=>{
         if(err){
             res.json({
-                state:"error, we'are sorry",
+                state:"error, we're sorry",
                 message:err
             })
         }

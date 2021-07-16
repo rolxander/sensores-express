@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes')
 const app = express();
 const mongoose = require('mongoose')
-
+const events = require('./events')
 app.use(express.json())
 let port = 3000;
 
@@ -19,6 +19,7 @@ mongo.then(()=>{
 })
 
 app.use('/',routes);
+app.use('/',events);
 
 
 app.listen(port,()=>{
