@@ -12,7 +12,12 @@ const eventSchema = moongose.Schema({
     fecha:{
         type:Date,
         required: true
-    }
+    },
+    measure:{
+        type:Number,
+        required: true
+    },
+    
 })
 const Event = module.exports = moongose.model('event',eventSchema)
 

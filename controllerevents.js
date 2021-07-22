@@ -20,7 +20,8 @@ exports.post_events = (req,res)=>{
     let event = new Event();
     event.event_name = req.body.event_name
     event.fecha = new Date().getTime();
-    event.id_sensor = req.body.id_sensor   
+    event.id_sensor = req.body.id_sensor
+    event.measure = req.body.measure   
     event.save((err)=>{
         if(err)
             res.json(err)
