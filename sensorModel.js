@@ -20,7 +20,9 @@ const sensorSchema = moongose.Schema({
     inside_the_house:{
         type:String,
         required:false
-    }  
+    },
+  
+    
 
 })
 

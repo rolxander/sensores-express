@@ -15,7 +15,11 @@ const eventSchema = moongose.Schema({
     },
     measure:{
         type:Number,
-        required: true
+        required: false
+    },
+    duration_of_event:{
+        type:Number,
+        required: false
     },
     
 })
