@@ -21,6 +21,12 @@ const eventSchema = moongose.Schema({
         type:Number,
         required: false
     },
+    nombre:{
+        type:String,
+        required: false
+    }
+    
+
     
 })
 const Event = module.exports = moongose.model('event',eventSchema)

@@ -23,6 +23,7 @@ exports.post_events = async (req,res)=>{
     event.id_sensor = req.body.id_sensor
     if(req.body.event_name === "ensendido de alarma"){
         event.measure = req.body.measure || 0
+        event.nombre = req.body.nombre
     }
     if(req.body.event_name === "apagado de alarma"){
         console.log("estoy dentro")
